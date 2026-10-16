@@ -210,9 +210,9 @@ function Hero() {
         </div>
         <h1 id="hero-title">
           <span>PORT</span>
-          <span>FOLIO<span className="hero-period">.</span></span>
+          <span>FOL IO<span className="hero-period">.</span></span>
         </h1>
-        <p className="hero-subtitle">UI/UX DESIGN SPECIALIST <span>&</span> FULL-STACK DEVELOPER</p>
+        <p className="hero-subtitle">UI/UX DESIGN SPECIALIST <span>&</span> WEBSITE DEVELOPER</p>
         <p className="hero-intro">
           I turn thoughtful ideas into useful, accessible digital experiences.
         </p>

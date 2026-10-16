@@ -466,7 +466,6 @@ function Projects() {
               <th scope="col">PROJECT NAME</th>
               <th scope="col">CATEGORY / SCOPE</th>
               <th scope="col">ESSENTIAL FEATURES</th>
-              <th scope="col">LAUNCH LINK</th>
             </tr>
           </thead>
           <tbody>
@@ -479,20 +478,18 @@ function Projects() {
                     {project.features.map((feature) => <span key={feature}>{feature}</span>)}
                   </div>
                 </td>
-                <td>
-                  <a
-                    aria-label={`Request a link to ${project.name}`}
-                    className="project-link"
-                    href={`mailto:muhanjiavugwi@gmail.com?subject=${encodeURIComponent(`Project link request: ${project.name}`)}`}
-                  >
-                    View Project <ArrowUpRight aria-hidden="true" size={14} />
-                  </a>
-                </td>
               </tr>
             ))}
           </tbody>
         </table>
-        <p className="project-note"><span>*</span> Project links are available on request.</p>
+        <a
+          className="project-link"
+          href="https://github.com/NatashaMuhanji"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Visit my GitHub profile <ArrowUpRight aria-hidden="true" size={14} />
+        </a>
       </div>
     </section>
   )
@@ -541,7 +538,12 @@ function Contact() {
               </a>
             ))}
           </div>
-          <a className="contact-cta" href="mailto:muhanjiavugwi@gmail.com">
+          <a
+            className="contact-cta"
+            href="https://wa.me/254725714782"
+            rel="noreferrer"
+            target="_blank"
+          >
             Say hello <ArrowRight aria-hidden="true" size={16} />
           </a>
         </div>

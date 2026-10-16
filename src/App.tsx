@@ -198,34 +198,6 @@ function Navigation() {
   )
 }
 
-function FaceIllustration({ small = false }: { small?: boolean }) {
-  return (
-    <svg
-      aria-label={small ? 'Illustrated portrait of Natasha' : 'Line illustration of a woman'}
-      className={small ? 'face-illustration face-illustration-small' : 'face-illustration'}
-      role="img"
-      viewBox="0 0 340 390"
-    >
-      <path
-        className="hair-fill"
-        d="M80 170c-9-78 25-130 91-134 73-5 112 42 98 137l-15 126H91z"
-      />
-      <path
-        className="face-line"
-        d="M91 148c0-61 28-97 79-97 54 0 80 38 80 97v59c0 64-35 104-80 104s-79-40-79-104z"
-      />
-      <path className="face-line" d="M91 139c20-7 35-24 42-46 22 27 63 43 117 43" />
-      <path className="face-line" d="M116 173c8-8 18-8 27 0m52 0c8-8 18-8 27 0" />
-      <path className="face-line" d="M139 181v22m0 0-7 7m7-7 7 7" />
-      <path className="face-line" d="M139 239c16 15 34 15 50 0" />
-      <path className="face-line" d="M92 193c-20-8-26 24-8 36m168-36c20-8 26 24 8 36" />
-      <path className="face-line" d="M115 308v47m105-47v47m-105-1c20-15 82-15 105 0" />
-      <path className="hair-outline" d="M91 165c-33-72-13-147 54-157 59-10 104 18 117 74 5 24 0 55-8 81-5-40-21-64-46-80-11 22-44 39-86 42-5 15-15 28-31 40z" />
-      <path className="hair-outline" d="M88 158c-11 39-12 96 2 140m159-141c13 43 13 97-2 142" />
-    </svg>
-  )
-}
-
 function Hero() {
   return (
     <section aria-labelledby="hero-title" className="hero-section" id="home">
@@ -258,7 +230,7 @@ function Hero() {
       <div className="hero-art">
         <div className="hero-portrait-frame">
           <div className="portrait-backdrop" />
-          <FaceIllustration />
+          <img alt="Portrait illustration of Natasha" className="face-illustration" src="/tasha-bit.svg" />
           <span className="portrait-label">FIG. 01 / NATASHA</span>
         </div>
         <div className="doodle-note note-top-left">
@@ -545,7 +517,9 @@ function Contact() {
       <div className="contact-panel">
         <div className="contact-profile">
           <span className="contact-profile-kicker">THE HUMAN BEHIND THE PIXELS</span>
-          <div className="contact-avatar"><FaceIllustration small /></div>
+          <div className="contact-avatar">
+            <img alt="Natasha" src="/natty.png" />
+          </div>
           <h3>Natasha<br />Avugwi Muhanji<span>.</span></h3>
           <p>UI/UX Digital Design Specialist<br />& Full-Stack Developer</p>
           <span className="contact-location"><MapPin size={14} /> Nairobi, Kenya</span>

@@ -383,6 +383,7 @@ body,
   width: 76%;
   height: 91%;
   overflow: visible;
+  object-fit: contain;
 }
 
 .face-line,
@@ -1066,10 +1067,10 @@ body,
   background: rgba(3, 39, 69, 0.25);
 }
 
-.face-illustration-small {
-  width: 95px;
-  height: 115px;
-  margin-top: 9px;
+.contact-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .contact-profile h3 {
@@ -1873,11 +1874,6 @@ body,
     width: 106px;
     height: 106px;
     margin: 15px 0;
-  }
-
-  .face-illustration-small {
-    width: 77px;
-    height: 96px;
   }
 
   .contact-profile h3 {

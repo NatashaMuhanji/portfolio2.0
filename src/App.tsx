@@ -518,7 +518,7 @@ function Contact() {
             <img alt="Natasha" src="/natty.png" />
           </div>
           <h3>Natasha<br />Avugwi Muhanji<span>.</span></h3>
-          <p>UI/UX Digital Design Specialist<br />& Full-Stack Developer</p>
+          <p>UI/UX Digital Designer<br />& Web Developer</p>
           <span className="contact-location"><MapPin size={14} /> Nairobi, Kenya</span>
         </div>
         <div className="contact-details">
